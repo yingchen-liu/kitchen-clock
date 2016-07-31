@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background-color: #2c3e50;
+}
+
+@font-face {
+  font-family: segment;
+  src: url(segment-7-standard.otf);
+}
+
+#clock {
+  position: relative;
+  top: 50px;
+  height: 173px;
+  background-image: url(../images/clock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#digit-area {
+  position: relative;
+  top: 42px;
+  width: 352px;
+  margin: auto;
+  font-size: 75px;
+  color: #ecf0f1;
+}
+
+.digit {
+  font-family: segment;
+}
+
+.digit-high {
+  position: absolute;
+  left: 72px;
+}
+
+.digit-bg {
+  opacity: 0.1;
+}
+
+#digit-colon {
+  position: absolute;
+  top: -12px;
+  left: 167px;
+  font-family: Arial;
+}
+
+.digit-low {
+  position: absolute;
+  left: 193px;
+}
+
+#stopwatch {
+  position: absolute;
+  top: -12px;
+  left: 303px;
+  opacity: 0.1;
+}
+
+#ruler-bg {
+  position: absolute;
+  bottom: 60px;
+  background-color: #edf0f2;
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+}
+
+#ruler {
+  overflow: hidden;
+  height: 25px;
+}
+
+#ruler ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+#ruler li {
+  list-style-type: none;
+  display: inline-block;
+  width: 8px;
+}
+
+#ruler .number {
+  position: relative;
+  left: -6px;
+  top: 2px;
+  color: #8c949c;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#ruler .number.less-than-10 {
+  left: -2px;
+}
+
+#ruler .mark {
+  position: relative;
+  width: 2px;
+  background-color: #8c949c;
+}
+
+#ruler .mark-10 {
+  height: 9px;
+}
+
+#ruler .mark-1 {
+  top: -15px;
+  height: 5px;
+  background-color: #cad6e1;
+}
+
+#ruler .mark-5 {
+  top: -2px;
+  height: 7px;
+}
+
+#pointer {
+  position: absolute;
+  bottom: 45px;
+  width: 0;
+  border-color: transparent transparent #edf0f2 transparent;
+  border-style: solid;
+  border-width: 0 5px 15px 5px;
+}

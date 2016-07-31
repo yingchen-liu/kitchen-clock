@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body onselectstart="return false">
+    <div id="clock">
+      <div id="digit-area">
+        <span id="digit-high" class="digit digit-high">88</span>
+        <span class="digit digit-high digit-bg">88</span>
+        <span id="digit-colon">:</span>
+        <span id="digit-low" class="digit digit-low">88</span>
+        <span class="digit digit-low digit-bg">88</span>
+        <img id="stopwatch" src="images/stopwatch.png">
+      </div>
+    </div>
+
+    <div id="ruler-bg">
+      <div id="ruler">
+        <ul>
+        </ul>
+      </div>
+    </div>
+
+    <div id="pointer"></div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/ion-sound/js/ion.sound.js"></script>
+    <script src="js/ruler.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
